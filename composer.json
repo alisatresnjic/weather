@@ -14,6 +14,5 @@
             "email": "atresnjic@schueler.hakzell.at"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "dev"
 }
