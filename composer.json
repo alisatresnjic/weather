@@ -1,0 +1,19 @@
+{
+    "name": "alisatresnjic/weather",
+    "description": "Weather",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alisatresnjic\\Weather\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alisatresnjic",
+            "email": "atresnjic@schueler.hakzell.at"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
