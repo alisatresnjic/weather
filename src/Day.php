@@ -4,9 +4,21 @@ namespace Alisatresnjic\Weather;
 
 class Day
 {
-    private string $dateToday = '';
-    public function addDay(): string{
-        return $this->dateToday;
+
+    private $date;
+    private $description;
+
+    public function __construct($date, $description) {
+        $this->date = $date;
+        $this->description = $description;
+    }
+
+    public function getDate() {
+        return $this->date;
+    }
+
+    public function getDescription() {
+        return $this->description;
     }
 
 }
