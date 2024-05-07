@@ -6,18 +6,19 @@ class History
 {
     private $weatherData = [];
 
-    public function addWeatherData(Day $day) {
-        $date = $day->getDate();
-        $this->weatherData[$date] = $day;
+    public function addWeatherData(Day $day)
+    {
+        $this->weatherData[] = $day;
     }
 
-    public function getWeatherByDate($date) {
-        if (array_key_exists($date, $this->weatherData)) {
-            return $this->weatherData[$date];
+    public function getWeatherByDate($date)
+    {
+        foreach ($this->weatherData as $weatherData) {
+            if ($weatherData->getDate() == $date) {
+                return $weatherData;
+            }
         }
-        else {
-            return "Es sind keine Wetterdaten vorhanden.";
-        }
+        return null; // Datum nicht gefunden
     }
 
 }

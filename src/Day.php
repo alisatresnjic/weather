@@ -5,8 +5,8 @@ namespace Alisatresnjic\Weather;
 class Day
 {
 
-    private $date;
-    private $description;
+    public $date;
+    public $description;
 
     public function __construct($date, $description) {
         $this->date = $date;
